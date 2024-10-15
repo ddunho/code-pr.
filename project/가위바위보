@@ -1,1 +1,4 @@
 //가위바위보 코드 만들기
+
+computer = random.randint(0,2)
+play =
