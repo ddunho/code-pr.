@@ -9,8 +9,11 @@ prime[ptr] = 2  #2는 소수이므로 초깃값으로 지정
 ptr += 1
 
 for n in range(3, 1001, 2):  #홀수만을 대상으로 설정
-    for i in range(1, ptr):
+    for i in range(1, ptr):  #이미 찾은 소수로 나눔
         counter += 1
-        if n %prime[i] == 0:
+        if n %prime[i] == 0: #나누어 떨어지면 소수가 아님
             break
+        else:
+            prime[ptr] = n  #소수로 배열에 등록
+            ptr += 1
 
