@@ -17,3 +17,7 @@ for n in range(3, 1001, 2):  #홀수만을 대상으로 설정
             prime[ptr] = n  #소수로 배열에 등록
             ptr += 1
 
+for i in range(ptr):   #ptr의 소수를 출력
+    print(prime[i])
+print(f'나눗셈을 실행한 횟수: {counter}')
+
