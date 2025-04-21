@@ -18,4 +18,7 @@ for n in range(5, 1001, 2):
         if n % prime[i] == 0:
             break
         i += 1
-        else:
+    else:
+        prime[ptr] = n
+        ptr += 1
+        counter += 1
