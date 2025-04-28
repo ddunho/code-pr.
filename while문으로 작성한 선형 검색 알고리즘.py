@@ -2,7 +2,7 @@
 
 from typing import Any, Sequence
 
-def seq_search(a: Sequence, key: Any) -> int:
+def seq_search(a: Sequence, key: Any) -> int: #시퀀스 a에서 key와 값이 같은 원소를 선형 검색(while문)
     i = 0
 
     while True:
@@ -11,6 +11,10 @@ def seq_search(a: Sequence, key: Any) -> int:
         if a[i] == key:
             return i
         i += 1
+
+if __name__ == '__main__':
+    num = int(input('원소 수를 입력하세요."'))
+    x = [None] * num
 
 
   
