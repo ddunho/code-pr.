@@ -16,3 +16,7 @@ while True:
         break
     x.append(float(s))
     number += 1
+
+ky = float(input('검색할 값을 입력하세요.: '))
+
+idx = seq_search(x,ky)
