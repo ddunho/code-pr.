@@ -13,3 +13,8 @@ def seq__search(seq: Sequence, key: Any) -> int:
         if a[i] == key:
             break
         i += 1
+    return -1 if i == len(seq) else i
+
+if __name__ == '__main__':
+    num = int(input('원소 수를 입력하세요.:'))
+    x = [None] * num
