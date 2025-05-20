@@ -9,3 +9,8 @@ def bin_search(a: Sequence, key: Any) -> int:
 
     while True:
         pc = (pl + pr) // 2
+
+        if a[pc] == key:
+            return pc
+        elif a[pc] < key:
+            pl = pc + 1
