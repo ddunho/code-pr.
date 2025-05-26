@@ -23,3 +23,9 @@ def bin_search(a: Sequence, key: Any) -> int:
 if __name__ == '__main__':
     num = int(input(원소 수를 입력하세요.: ''))
     x = [None] * num
+
+    print('배열 데이터를 오름차순으로 입력하세요.')
+
+    x[0] = int(input('x[0]:'))
+
+    for i in range(1, num):
