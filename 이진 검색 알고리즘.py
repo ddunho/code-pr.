@@ -29,3 +29,12 @@ if __name__ == '__main__':
     x[0] = int(input('x[0]:'))
 
     for i in range(1, num):
+        while True:
+            x[i] = int(input(f'x[{i}]: '))
+            if x[i] >= x[i - 1]:
+                break
+
+    ky = int(input('검색할 값을 입력하세요.: '))
+
+    idx = bin_search(x, ky)
+    
