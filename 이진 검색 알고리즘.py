@@ -21,7 +21,7 @@ def bin_search(a: Sequence, key: Any) -> int:
     return -1
 
 if __name__ == '__main__':
-    num = int(input(원소 수를 입력하세요.: ''))
+    num = int(input('원소 수를 입력하세요.: '))
     x = [None] * num
 
     print('배열 데이터를 오름차순으로 입력하세요.')
@@ -37,4 +37,9 @@ if __name__ == '__main__':
     ky = int(input('검색할 값을 입력하세요.: '))
 
     idx = bin_search(x, ky)
-    
+
+    if idx == -1:
+        print('검색값을 갖는 원소가 존재하지 않습니다.')
+    else:
+        print(f'검색갑은 x[{idx}]에 있습니다.')
+
