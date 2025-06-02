@@ -5,3 +5,7 @@ def seq_search(a: Sequence, key: Any) -> int:
 
     while i < n:
         if a[i] == key:
+            return 1
+        i += 1
+
+    return -1
