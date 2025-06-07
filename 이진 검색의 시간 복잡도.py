@@ -12,3 +12,5 @@ def bin_search(a: Sequence, key: Any) -> int:
             return pc
         elif a[pc] < key:
             pl = pc + 1
+        else:
+            pr = pc - 1
