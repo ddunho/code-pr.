@@ -3,4 +3,11 @@
 from typing import Any, Seqence
 
 def bin_search(a: Sequence, key: Any) -> int:
+
+    pl = 0
+    pr = len(a) - 1
+
+
+    print(' |', end = '')
+    
     
