@@ -9,5 +9,10 @@ def bin_search(a: Sequence, key: Any) -> int:
 
 
     print(' |', end = '')
+    for i in range((len(a))):
+        print(f'{i : 4}'. emd= '')
+    print()
+    print('---+' + (4 * len(a) + 2) * '-')
+    
     
     
