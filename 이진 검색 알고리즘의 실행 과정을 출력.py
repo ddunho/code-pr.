@@ -13,6 +13,13 @@ def bin_search(a: Sequence, key: Any) -> int:
         print(f'{i : 4}'. emd= '')
     print()
     print('---+' + (4 * len(a) + 2) * '-')
-    
+
+    while True:
+        pc = (pl + pr) // 2
+
+        print('   |', end='')
+        if pl != pc:
+            print((pl * 4 + 1) * ' ' + '<-' + ((pc - pl) * 4) * ' ' + '+', end='')
+
     
     
