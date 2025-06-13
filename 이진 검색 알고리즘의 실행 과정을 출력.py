@@ -1,4 +1,4 @@
-#이진 검색 알고리즘의 실행 과정을 출력
+ #이진 검색 알고리즘의 실행 과정을 출력
 
 from typing import Any, Seqence
 
@@ -20,6 +20,10 @@ def bin_search(a: Sequence, key: Any) -> int:
         print('   |', end='')
         if pl != pc:
             print((pl * 4 + 1) * ' ' + '<-' + ((pc - pl) * 4) * ' ' + '+', end='')
+        else:
+            print((pc * 4 + 1) * ' ' + '<+', end='')
+        if pc != pr:
+            print(((pr-pc) * 4 - 2 ) * ' ' + ' ->')
 
     
     
