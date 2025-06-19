@@ -5,4 +5,9 @@
         p = self.table[hash]
 
         while p is not None:
+            if p.key == key:
+                return p.value
+            p = p.next
+
+        return None
             
