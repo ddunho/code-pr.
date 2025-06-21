@@ -14,5 +14,10 @@ def search(self, key: Any) -> Any:
 def add(self, key: Any, value: Any) -> bool:
      hash = self.hash_value(key)
      p = self.table[hash]
+
+     while p is not None:
+          if p.key == key:
+               return False
+          p = p.next
     
             
