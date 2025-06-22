@@ -19,5 +19,10 @@ def add(self, key: Any, value: Any) -> bool:
           if p.key == key:
                return False
           p = p.next
+
+     temp = Node(key, value, self.table[hash])
+     self.table[hash] = temp
+     return True
+
     
             
