@@ -10,4 +10,10 @@ def remove(self, key: Any) -> bool:
             if pp is None:
                 self.table[hash] = p.next
             else:
+                pp.next = p.next
+            return True
+        pp = pp
+        p = p.next
+    return False
+
             
