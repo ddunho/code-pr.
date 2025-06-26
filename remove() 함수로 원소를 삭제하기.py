@@ -16,4 +16,9 @@ def remove(self, key: Any) -> bool:
         p = p.next
     return False
 
+def dump(self) -> None:
+    for i in range(self.capacity):
+        p = self.table[i]
+        print(i, end='')
+
             
