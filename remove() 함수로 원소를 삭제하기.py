@@ -20,5 +20,8 @@ def dump(self) -> None:
     for i in range(self.capacity):
         p = self.table[i]
         print(i, end='')
+        while p is not None:
+            print(f' → {p.key} ({p.value})', end = '')
+            
 
             
