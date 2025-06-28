@@ -22,6 +22,8 @@ def dump(self) -> None:
         print(i, end='')
         while p is not None:
             print(f' → {p.key} ({p.value})', end = '')
-            
+            p = p.next
+        print()
+
 
             
