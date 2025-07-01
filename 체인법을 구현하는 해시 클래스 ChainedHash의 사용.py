@@ -13,3 +13,10 @@ def select_menu() -> Menu:
         n = int(input(': '))
         if 1 <= n <= len(Menu):
             return Menu(n)
+        
+hash = ChainedHash(13)
+
+while True:
+    menu = select_menu()
+
+    if menu == Menu.추가:
