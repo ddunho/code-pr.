@@ -20,3 +20,7 @@ while True:
     menu = select_menu()
 
     if menu == Menu.추가:
+        key = int(input('추가할 키를 입력하세요.:'))
+        val = input('추가할 값을 입력하세요.:')
+        if not hash.add(key, val):
+            print('추가를 실패했습니다!')
