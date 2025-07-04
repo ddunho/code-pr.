@@ -29,3 +29,8 @@ while True:
         key = int(input('삭제할 키를 입력하세요.: '))
         if not hash.remove(key):
             print('삭제를 실패했습니다!')
+
+    elif menu == Menu.검색:
+        key = int(input('검색할 키를 입력하세요.:'))
+        t = hash.search(key)
+                
