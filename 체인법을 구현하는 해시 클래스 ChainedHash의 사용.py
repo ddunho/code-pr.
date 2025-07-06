@@ -33,4 +33,8 @@ while True:
     elif menu == Menu.검색:
         key = int(input('검색할 키를 입력하세요.:'))
         t = hash.search(key)
+        if t is not None:
+            print(f'검색한 키를 갖는 값은 {t}입니다.')
+        else:
+            print('검색할 데이터가 없습니다.')
                 
