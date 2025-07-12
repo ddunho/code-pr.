@@ -37,4 +37,5 @@ while True:
             print(f'검색한 키를 갖는 값은 {t}입니다.')
         else:
             print('검색할 데이터가 없습니다.')
-                
+    elif menu == Menu.덤프:
+        hash.dump()
