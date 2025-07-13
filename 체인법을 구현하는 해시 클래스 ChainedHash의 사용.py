@@ -39,3 +39,6 @@ while True:
             print('검색할 데이터가 없습니다.')
     elif menu == Menu.덤프:
         hash.dump()
+
+    else:
+        break
