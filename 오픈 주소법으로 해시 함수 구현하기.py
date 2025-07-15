@@ -11,3 +11,10 @@ class Status(Enum):
     OCCUPied = 0
     EMPTY = 1
     DELETED = 2
+
+class Bucket:
+
+    def __init__(self, key: Any = None, value: Any = None,
+                 stat: Status = Status.EMPTY) -> None:
+        
+        
