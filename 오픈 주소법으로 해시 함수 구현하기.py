@@ -17,4 +17,6 @@ class Bucket:
     def __init__(self, key: Any = None, value: Any = None,
                  stat: Status = Status.EMPTY) -> None:
         
-        
+        self.key = key
+        self.value = value
+        self.stat = stat
