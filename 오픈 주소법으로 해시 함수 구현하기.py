@@ -20,3 +20,9 @@ class Bucket:
         self.key = key
         self.value = value
         self.stat = stat
+
+    def set(self, key: Any, value: Any, stat: Status) -> None:
+
+        self.key = key
+        self.value = value
+        self.stat = stat
