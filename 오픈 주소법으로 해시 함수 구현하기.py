@@ -26,3 +26,7 @@ class Bucket:
         self.key = key
         self.value = value
         self.stat = stat
+
+    def set_status(self, stat: Status) -> None:
+
+        self.stat = stat
