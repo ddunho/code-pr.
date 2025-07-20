@@ -35,3 +35,6 @@ class OpenHash:
 
     def __init__(self, key: Any) -> int:
         if isinstance(key, int):
+            return key % self.capacity
+        return(int(hashlib.md5(str(key).encode()).hexdigest(), 16 %self.capcacity))
+    
