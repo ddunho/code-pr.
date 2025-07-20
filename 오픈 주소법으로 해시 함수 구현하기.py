@@ -30,3 +30,8 @@ class Bucket:
     def set_status(self, stat: Status) -> None:
 
         self.stat = stat
+
+class OpenHash:
+
+    def __init__(self, key: Any) -> int:
+        if isinstance(key, int):
