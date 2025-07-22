@@ -38,6 +38,11 @@ class OpenHash:
             return key % self.capacity
         return(int(hashlib.md5(str(key).encode()).hexdigest(), 16 %self.capcacity))
     
-    def rehash_value(self, key: Any) -> int:
-        return(self.hash_value(key) + 1) % self.capacity
+    def hash_value(self, key: Any) -> int:
+        if isinstance(key, int):
+            return key % self.capacity    
+    
+    def search node(self, key: Any) -> Any:
+        hash = self.hash_value(key)
+    
     
