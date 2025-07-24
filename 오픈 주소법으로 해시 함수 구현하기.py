@@ -45,5 +45,10 @@ class OpenHash:
     
     def search node(self, key: Any) -> Any:
         hash = self.hash_value(key)
+        p = self.table[hash]
+    
+    for i in range(self.capacity):
+        if p.stat == Statis.EMPTY:
+            break
     
     
