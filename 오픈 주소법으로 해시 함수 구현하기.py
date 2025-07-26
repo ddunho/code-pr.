@@ -50,5 +50,8 @@ class OpenHash:
     for i in range(self.capacity):
         if p.stat == Statis.EMPTY:
             break
+        elif p.stat == Status.OCCUPIED and p.key == key:
+            return p
+        
     
     
