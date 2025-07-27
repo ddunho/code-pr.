@@ -55,6 +55,11 @@ class OpenHash:
         hash = self.rehash_value(hash)
         p = self.table[hash]
         return None
+    
+    def search(self, key: Any) -> Any:
+        p = self.search_node(key)
+        if p is not None:
+            return p.value
         
     
     
