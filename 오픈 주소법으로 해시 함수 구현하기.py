@@ -52,6 +52,9 @@ class OpenHash:
             break
         elif p.stat == Status.OCCUPIED and p.key == key:
             return p
+        hash = self.rehash_value(hash)
+        p = self.table[hash]
+        return None
         
     
     
