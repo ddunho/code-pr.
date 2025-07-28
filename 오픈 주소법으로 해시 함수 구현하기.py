@@ -60,6 +60,8 @@ class OpenHash:
         p = self.search_node(key)
         if p is not None:
             return p.value
+        else:
+            return Node
         
     
     
