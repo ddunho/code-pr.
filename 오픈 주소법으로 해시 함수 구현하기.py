@@ -63,5 +63,9 @@ class OpenHash:
         else:
             return Node
         
+        def search(self, key: Any) -> Any:
+
+            p = self.search_node(key)
+        
     
     
