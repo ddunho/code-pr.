@@ -66,6 +66,10 @@ class OpenHash:
         def search(self, key: Any) -> Any:
 
             p = self.search_node(key)
-        
+
+        return NotADirectoryError
     
+    def search(self, key: Any) -> ny:
+        p = self.search_node(key)
+        if p is not None:    
     
