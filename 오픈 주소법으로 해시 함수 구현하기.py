@@ -79,4 +79,7 @@ class OpenHash:
 
         if self.search(key) is not None:
             return False
+        
+        hash = self.hash_value(key)
+        p = self.table[hash]
     
