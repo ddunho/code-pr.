@@ -74,5 +74,9 @@ class OpenHash:
         if p is not None: 
             return p.value
         else:
-            return Node  
+            return None
+    def add(self, key: Any, value: Any) -> bool:
+
+        if self.search(key) is not None:
+            return False
     
