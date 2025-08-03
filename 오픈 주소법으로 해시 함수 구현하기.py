@@ -82,4 +82,7 @@ class OpenHash:
         
         hash = self.hash_value(key)
         p = self.table[hash]
+        for i in range(self.capacity):
+            if p.stat == Status.EMPTY or p.stat == Status.DELETED:
+                
     
