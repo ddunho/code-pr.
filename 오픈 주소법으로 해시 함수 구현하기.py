@@ -84,5 +84,7 @@ class OpenHash:
         p = self.table[hash]
         for i in range(self.capacity):
             if p.stat == Status.EMPTY or p.stat == Status.DELETED:
-                
+                self.table[hash] = Bucket(key, value, Status.OCCUPIED)
+                return True
+
     
