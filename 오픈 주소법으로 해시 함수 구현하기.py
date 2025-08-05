@@ -86,5 +86,8 @@ class OpenHash:
             if p.stat == Status.EMPTY or p.stat == Status.DELETED:
                 self.table[hash] = Bucket(key, value, Status.OCCUPIED)
                 return True
+            hash = self.rehash_value(hash)
+            p = self.table[hash]
+        return False
 
     
