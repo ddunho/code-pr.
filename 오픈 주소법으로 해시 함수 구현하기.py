@@ -89,5 +89,9 @@ class OpenHash:
             hash = self.rehash_value(hash)
             p = self.table[hash]
         return False
+    
+    def remove(self, key: Any) -> int:
+        p = self.search_node(key)
+        if p is None:
 
     
