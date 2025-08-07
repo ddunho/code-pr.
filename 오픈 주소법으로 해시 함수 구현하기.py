@@ -93,5 +93,6 @@ class OpenHash:
     def remove(self, key: Any) -> int:
         p = self.search_node(key)
         if p is None:
-
-    
+            return False
+        p.set_status(Status.DELETED)
+        return True
