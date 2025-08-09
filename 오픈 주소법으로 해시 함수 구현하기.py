@@ -96,3 +96,8 @@ class OpenHash:
             return False
         p.set_status(Status.DELETED)
         return True
+    
+    def dump(self) -> None:
+
+        for i in range(self.capcity):
+            print(f'{i:2}' , end = '')
